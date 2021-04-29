@@ -157,6 +157,10 @@
           saveTasks();
         });
 
+        window.addEventListener("load", () => {
+          loadTasks();
+        });
+
         let list = document.querySelector(
           task.type === Type.Todo ? "#todo-list" : "#done-list"
         );
